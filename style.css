@@ -580,31 +580,33 @@ text-decoration: none;
     font-size: 30px;
     color: #fff;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
     font-weight: 300;
 }  
 .container-8 hr {
     width: 80%;
-    margin: 10px auto;
+    margin: 0em auto;
 }
 .container-8 span {
-    margin: 0 3% 0;
+    margin: 0 0 0;
 }
 .container-8 p {
     color: #fff;
     width: 70%;
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
-    margin-bottom: 10%;
+   
 /* opacity: 0; */
 /* transform: tra; */
+
   
     transition: .3s all ease;
 }
+#close {
+    transition: .3s all;
+}
 .container-8 .para {
-transform: translateY(80px);
-opacity:0
-  
+    opacity: 0;
 }
 
 

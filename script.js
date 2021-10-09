@@ -49,8 +49,14 @@ function openpara() {
   rotateIcon = !rotateIcon;
   if (rotateIcon) {
     close.style.transform = 'rotate(45deg)';
+    para.style.opacity="1";
+    para.style.transform='translateY(40px)';
   } else {
     close.style.transform = 'rotate(0deg)';
+    para.style.opacity="0";
+    para.style.transform='translateY(0px)';
+
+
   }
 }
 
