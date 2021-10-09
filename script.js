@@ -43,18 +43,14 @@ timer = null;
 
 }
 let para = document.querySelector('.para');
-let close = document.querySelector('#close')
+let close = document.querySelector('#close');
+let rotateIcon = false;
 function openpara() {
+  rotateIcon = !rotateIcon;
+  if (rotateIcon) {
+    close.style.transform = 'rotate(45deg)';
+  } else {
+    close.style.transform = 'rotate(0deg)';
+  }
+}
 
-  para.style.transform="translateY(60px)";
-  para.style.opacity="1"
-  close.style.transform= 'rotate(45deg)';
-return;
-}
-function clospara() {
-  
-  para.style.transform="translateY(0)";
-  para.style.opacity="0"
-  close.style.transform= 'rotate(0deg)';
-return;
-}

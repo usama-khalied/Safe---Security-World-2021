@@ -596,21 +596,18 @@ text-decoration: none;
     margin: 20px auto;
     text-align: center;
     margin-bottom: 10%;
+/* opacity: 0; */
+/* transform: tra; */
   
     transition: .3s all ease;
 }
 .container-8 .para {
- 
-  position:relative;
-  left: 0;
-  bottom: 0;
-  transform: translateY(0);
-  opacity: 0;
-    
+transform: translateY(80px);
+opacity:0
+  
 }
-#close {
-    transition: .3s all;
-}
+
+
 .container-8 a {
     text-decoration: none;
     
