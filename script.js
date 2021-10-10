@@ -92,3 +92,19 @@ write.style.opacity="0";
 write.style.transform='translateY(0px)';
 }
 }
+lang = document.querySelector('.lang');
+let ghoom = true;
+close4 = document.querySelector('#close4');
+function first(){
+  ghoom = !ghoom;
+  if(ghoom){
+  close4.style.transform='rotate(45deg)';
+  lang.style.transform='translateY(20px)';
+  lang.style.opacity="1";
+}
+else {
+  close4.style.transform='rotate(0deg)';
+  lang.style.transform='translateY(0px)';
+  lang.style.opacity="0";
+}
+}
