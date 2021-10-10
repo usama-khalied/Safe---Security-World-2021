@@ -593,7 +593,7 @@ text-decoration: none;
 .container-8 p {
     color: #fff;
     width: 70%;
-    margin: 0px auto;
+    margin: 2% auto;
     text-align: center;
    
 /* opacity: 0; */
@@ -602,22 +602,26 @@ text-decoration: none;
   
     transition: .3s all ease;
 }
-#close {
+#close ,  #close2 , #close3{
     transition: .3s all;
 }
-.container-8 .para {
+.container-8 .para , .container-8 .paragraph , .container-8 .paragraph-2 , .container-8 .write{
     opacity: 0;
 }
 
+/* .container-8 .paragraph {
+    opacity: 0;
+    display: block;
 
+} */
 .container-8 a {
     text-decoration: none;
-    
+
         padding: 10px 15px 10px;
         color: black;
         background-color: #fff;
         letter-spacing: 1px;
-        transform: rotate(45deg);
+ 
         
     }
     @media (max-width:960px) {
