@@ -108,3 +108,25 @@ else {
   lang.style.opacity="0";
 }
 }
+let cursor = document.querySelector(".cursor");
+          
+let navlinks = document.getElementsByClassName("container");
+document.addEventListener("mousemove", (e) => {
+cursor.style.left = e.pageX + "px";
+cursor.style.top = e.pageY + "px";
+
+});
+
+
+
+navlinks.forEach(link => {
+    link.addEventListener("mouseover", ()=>{
+        cursor.classList.add(".link-grow");
+    });
+    
+
+    link.addEventListener("mouseleave", ()=>{
+        cursor.classList.remove(".link-grow");
+    });
+
+});
