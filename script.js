@@ -30,3 +30,8 @@ timer = null;}
 
 
 
+function showCard(event){
+    var x = event.clientX;
+    var y = event.clientY;
+    
+}
