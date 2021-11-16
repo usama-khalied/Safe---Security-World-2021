@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;500;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +8,11 @@
 }
 html {
     font-size: 62.5%;
+    font-family: 'M PLUS 1', sans-serif;
 }
 body {
     overflow-x: hidden;
+    background: #000;
 }
 header {
     display: flex;
@@ -152,12 +156,11 @@ left: 45%;
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(images/5e53d7ca678f9fd98b21de17_home-hero-image.jpg);
     background-size: cover;
     background-position: center;  
-   clip-path: circle(70px at var(--x) var(--y)); 
+    /* clip-path: circle(100px); */
+    transition: .3s;
 }
-.container:active {
-    clip-path: circle(400px at var(--x) var(--y)); 
 
-}
+
 .container h1 {
     color: #fff;
     text-align: center;
