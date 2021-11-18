@@ -283,15 +283,20 @@ transform: scale(1.2);
 /* ---management section  */
 .manage-sec {
     height: 100vh;
-    position: relative;
+    position: sticky;
     width: 100%;
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(./images/section.jpg);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-   
+   flex-direction: column;
    justify-content: center;
+   clip-path: circle(15%);
+transition: .3s all;
+}
+.manage-sec:active {
+   clip-path: circle(25%);
 }
 .manage-1 {
     display: flex;
@@ -319,7 +324,11 @@ transform: scale(1.2);
     /* color: white; */
     font-weight: 600;
     text-align: center;
-   fill: aqua;
-  
-    
+    -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;   
+}
+.manage-cont:hover {
+    -webkit-text-fill-color:white;
+  -webkit-text-stroke-color: white;   
 }
